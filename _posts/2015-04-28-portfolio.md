@@ -1,0 +1,6 @@
+#Clarky 4th July Fourth
+July Fourth in Clark Forks, ID.
+
+* Fireworks
+* Hot Dogs
+* Potato Salad
