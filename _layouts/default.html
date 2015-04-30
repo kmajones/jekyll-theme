@@ -4,6 +4,24 @@
 	{% capture hero %}{% include_relative _posts/2015-04-28-hero.md %}{% endcapture %} 
 	{{ hero | markdownify }}
 
-{{ content }}
+<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								{% capture hero %}{% include_relative _posts/2015-04-28-hero.md %}{% endcapture %} 
+								{{ hero | markdownify }}
+							</header>
+							
+							<footer>
+								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+							</footer>
+
+						</div>
+					</section>
+
+<!-- {{ content }} Not sure where to put this  -->
 {% include portfolio.html %}
 {% include foot.html %}
