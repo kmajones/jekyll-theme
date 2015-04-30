@@ -1,9 +1,6 @@
 {% include head.html %}
 {% include nav.html %}
 	
-	{% capture hero %}{% include_relative _posts/2015-04-28-hero.md %}{% endcapture %} 
-	{{ hero | markdownify }}
-
 <div id="main">
 
 				<!-- Intro -->
@@ -22,6 +19,9 @@
 						</div>
 					</section>
 
+												
+						{% include portfolio.html %}
+
 <!-- {{ content }} Not sure where to put this  -->
-{% include portfolio.html %}
+
 {% include foot.html %}
