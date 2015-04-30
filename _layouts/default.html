@@ -18,9 +18,56 @@
 
 						</div>
 					</section>
+					
+		{% include portfolio.html %}
 
-												
-						{% include portfolio.html %}
+		<section id="about" class="three">
+						<div class="container">
+
+							<header>
+							{% capture about %}{% include_relative _posts/2015-04-28-about.md %}{% endcapture %} 
+								{{ about | markdownify }} 
+							</header>
+
+					
+
+						</div>
+					</section>
+			
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								{% capture contact %}{% include_relative _posts/2015-04-28-contact.md %}{% endcapture %} 
+								{{ contact | markdownify }} 
+							</header>
+
+													
+							<form method="post" action="#">
+								<div class="row 50%">
+									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+			
+			</div>
+
+
+
 
 <!-- {{ content }} Not sure where to put this  --> 
 
